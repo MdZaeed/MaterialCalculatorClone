@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CalculatorCloneAgain</string>
+    <string name="square_root_symbol">\u221a</string>
+    <string name="pi_symbol">\u03c0</string>
+</resources>

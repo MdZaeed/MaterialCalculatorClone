@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="bs23.com.calculatorcloneagain.MainActivity">
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rippling"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="200%"
+        app:layout_heightPercent="400%"
+        android:layout_alignParentTop="true"
+        app:rv_color="@android:color/black"
+        app:rv_rippleDuration="300"
+        app:rv_alpha="256"
+        app:rv_framerate="20">
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/numberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/rawTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="27%"
+            android:layout_alignParentTop="true"
+            android:textSize="30dp"
+            android:gravity="center|right"/>
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="18%"
+            android:layout_below="@id/rawTextView"
+            android:textSize="20dp"
+            android:gravity="center|right"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    </com.andexert.library.RippleView>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="60%"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wholeButtonsLatuot"
+        >
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/numberButtonsLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="75%"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="1"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_alignParentTop="true"/>
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="2"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_toRightOf="@id/b1"
+            android:layout_alignTop="@id/b1"/>
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="3"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_toRightOf="@id/b2"
+            android:layout_alignTop="@id/b1"/>
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="4"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/b1"
+            android:layout_alignLeft="@id/b1"/>
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="5"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_toRightOf="@id/b4"
+            android:layout_alignTop="@id/b4"/>
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="6"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_toRightOf="@id/b5"
+            android:layout_alignTop="@id/b4"/>
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="7"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/b4"
+            android:layout_alignLeft="@id/b4"/>
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="8"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_toRightOf="@id/b7"
+            android:layout_alignTop="@id/b7"/>
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="9"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_toRightOf="@id/b8"
+            android:layout_alignTop="@id/b7"/>
+        <Button
+            android:id="@+id/bdot"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="."
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_below="@id/b7"
+            android:layout_alignLeft="@id/b7"/>
+        <Button
+            android:id="@+id/b0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="0"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_toRightOf="@id/bdot"
+            android:layout_alignTop="@id/bdot"/>
+
+        <Button
+            android:id="@+id/bequal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="="
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="33%"
+            android:layout_toRightOf="@id/b0"
+            android:layout_alignTop="@id/bdot"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/operatorLayout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="20%"
+        android:layout_toRightOf="@id/numberButtonsLayout"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/bdel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="DEL"
+            app:layout_heightPercent="20%"
+            android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/bdivition"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="/"
+            app:layout_heightPercent="20%"
+            android:layout_below="@id/bdel"/>
+
+        <Button
+            android:id="@+id/bmultiplication"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="*"
+            app:layout_heightPercent="20%"
+            android:layout_below="@id/bdivition"/>
+
+        <Button
+            android:id="@+id/bminus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="-"
+            app:layout_heightPercent="20%"
+            android:layout_below="@id/bmultiplication"/>
+
+        <Button
+            android:id="@+id/bplus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="+"
+            app:layout_heightPercent="20%"
+            android:layout_below="@id/bminus"
+            android:stateListAnimator="@anim/elevation_selector"/>
+
+    </android.support.percent.PercentRelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="5%"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorAccent"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/rightDrawer"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:layout_gravity="right" >
+
+            <include android:id="@+id/science"
+                layout="@layout/scientific_layout_alt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            </android.support.percent.PercentRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/leftDrawer"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:layout_gravity="left">
+
+        <include android:id="@+id/hissssss"
+            layout="@layout/history_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+</android.support.percent.PercentRelativeLayout>
